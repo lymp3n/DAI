@@ -1,0 +1,194 @@
+
+@font-face {
+    font-family: "GNUTypewriter";
+    src: url(../fonts/gtw.ttf);
+}
+@font-face {
+    font-family: "Scratched";
+    src: url(../fonts/Scratched\ Letters.ttf);
+}
+@keyframes fade-in{
+    from{opacity: 0; scale:0.5;}
+    to{opacity: 1; scale:1;}
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    image-rendering: smooth;
+    color: white;
+    text-decoration: none;
+}
+a{
+    text-decoration: 0;
+    font-family: "GNUTypewriter";
+    font-size: 10px;
+    text-shadow: black 1px 0 10px;
+}
+a img{
+    filter: invert(1) drop-shadow( 0px 0px 5px rgba(0, 0, 0));
+    transition: 0.2s;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range: entry cover 20%;
+}
+img{
+    image-rendering: smooth;
+}
+a:hover img{
+    filter: invert(0) drop-shadow( 0px 0px 5px rgba(255, 255, 255));
+    transition: 0.2s;
+}
+h1{
+    font-family: "Scratched";
+    text-shadow: black 1px 0 10px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+h2{
+    font-family: "Scratched";
+    text-shadow: black 1px 0 10px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+p{
+    margin: 2vh;
+    color:white;
+    font-family: "GNUTypewriter";
+    text-align: justify;
+    text-shadow: black 1px 0 10px;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+body{
+    background-color: black;
+    background-image: url(../img/Background1_upscaled.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Background2.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+.blob{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+.video{
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+.blob_text{
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
+    mix-blend-mode:difference;
+    background-color: black;
+}
+.footer{
+    width: 100%;
+    height: 25vh;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 1));
+    filter: drop-shadow(0 0 0.75rem black);
+
+    display: grid;
+    grid-row: 70% 30%;
+    justify-items: center;
+    align-items: center;
+}
+.footer div{
+    margin-top: 5vh;
+    width: 60%;
+    display: flex;
+    flex-direction:row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icon8{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.icon8:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+#blob1{
+    background-image: url(../img/Background3.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#blob1_left{
+    text-align: left;
+}
+#blob1_right{
+    text-align: right;
+}
+#blob2{
+    background-image: url(../img/Background2.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#blob3{
+    background-image: url(../img/Background2.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#video1{
+    background-image: url(../img/video1.webp);
+}
+#video2{
+    background-image: url(../img/video2.webp);
+}
+#video3{
+    background-image: url(../img/video3.webp);
+}
+#t_center{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    p{
+        font-size: 13px;
+    }
+    .blob{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #blob1_left{
+        text-align: center;
+    }
+    #blob1_right{
+        text-align: center;
+    }
+}
